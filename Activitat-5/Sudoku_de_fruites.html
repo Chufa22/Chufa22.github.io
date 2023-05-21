@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku de Fruites</title>
+    <style>
+
+
+    
+        .A {
+            color:rgb(188, 212, 230);
+            background-color: rgb(188, 212, 230);
+            width: 103px;
+            height: 100px;
+            
+            
+            
+        }
+        .B {
+            color: rgb(255, 237, 138);
+            background-color:  rgb(255, 237, 138);
+            
+            width: 103px;
+            height: 103px;
+
+        }
+        .C {
+            color:rgb(255, 203, 212);
+            background-color: rgb(255, 203, 212);
+            
+            width: 103px;
+            height: 103px;
+            
+        }
+        .D {
+            color:rgb(255, 255, 115);
+            background-color: rgb(255, 255, 115);
+           
+            width: 103px;
+            height: 100px;
+            
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Sudoku de Fruites</h1>
+
+   
+
+
+    <table>
+            <tr>
+                <th>
+                    <table style="border-collapse:collapse;">
+                        <tr>
+                            <th class="A" style="border-left: 3px solid rgb(7, 8, 235); border-top:3px solid rgb(7, 8, 235); border-right: 3px solid rgb(7, 8, 235); border-bottom:3px solid rgb(7, 8, 235);"><img src="Platan.png" height="100px" width="100px" ></th>
+                            <th class="A" style="border-right: 3px solid rgb(7, 8, 235);border-top:3px solid rgb(7, 8, 235); border-left: 3px solid rgb(7, 8, 235); border-bottom:3px solid rgb(7, 8, 235);"><img src="Presec.png" height="100px" width="100px"></th>
+                        </tr>
+                        <tr>
+                            <th class="A" style="border-left:3px solid rgb(7, 8, 235); border-bottom:3px solid rgb(7, 8, 235); border-right: 3px solid rgb(7, 8, 235); border-top:3px solid rgb(7, 8, 235);">3</th>
+                            <th class="A" style="border-right:3px solid rgb(7, 8, 235); border-bottom:3px solid rgb(7, 8, 235); border-left: 3px solid rgb(7, 8, 235); border-top:3px solid rgb(7, 8, 235);"><img src="Fresa.png" height="100px" width="100px"></th>
+                        </tr>
+                    </table>
+                </th>
+                <th class="blanc"></th>
+                <th>
+                    <table style="border-collapse:collapse;">
+                        <tr>
+                            <th class="B" style="border-left: 3px solid rgb(255, 221, 42); border-top:3px solid rgb(255, 221, 42); border-right: 3px solid rgb(7, 8, 235); border-bottom:3px solid rgb(7, 8, 235);">1</th>
+                            <th class="B" style="border-right: 3px solid rgb(255, 221, 42);border-top:3px solid rgb(255, 221, 42); border-left: 3px solid rgb(7, 8, 235); border-bottom:3px solid rgb(7, 8, 235);">2</th>
+                        </tr>
+                        <tr>
+                            <th class="B" style="border-left:3px solid rgb(255, 221, 42); border-bottom:3px solid rgb(255, 221, 42); border-right: 3px solid rgb(7, 8, 235); border-top:3px solid rgb(7, 8, 235);"><img src="Presec.png" height="100px" width="100px" ></th>
+                            <th class="B" style="border-right:3px solid rgb(255, 221, 42); border-bottom:3px solid rgb(255, 221, 42); border-left: 3px solid rgb(7, 8, 235); border-top:3px solid rgb(7, 8, 235);"><img src="Platan.png" height="100px" width="100px" ></th>
+                        </tr>
+                    </table>
+                </th>
+            </tr>
+            <tr class="blanc"></tr>
+
+            <tr>
+                <th>
+                    <table style="border-collapse:collapse;">
+                        <tr>
+                            <th class="C" style="border-left: 3px solid rgb(255, 196, 206); border-top:3px solid rgb(255, 196, 206); border-right: 3px solid rgb(7, 8, 235); border-bottom:3px solid rgb(7, 8, 235);">1</th>
+                            <th class="C" style="border-right: 3px solid rgb(255, 196, 206);border-top:3px solid rgb(255, 196, 206); border-left: 3px solid rgb(7, 8, 235); border-bottom:3px solid rgb(7, 8, 235);">2</th>
+                        </tr>
+                        <tr>
+                            <th class="C" style="border-left:3px solid rgb(255, 196, 206); border-bottom:3px solid rgb(255, 196, 206); border-right: 3px solid rgb(7, 8, 235); border-top:3px solid rgb(7, 8, 235);">3</th>
+                            <th class="C" style="border-right:3px solid rgb(255, 196, 206); border-bottom:3px solid rgb(255, 196, 206);border-left: 3px solid rgb(7, 8, 235); border-top:3px solid rgb(7, 8, 235);"><img src="Pera.png" height="100px" width="100px" ></th>
+                        </tr>
+                    </table>
+                </th>
+                <th class="blanc"></th>
+                <th>
+                    <table style="border-collapse:collapse;">
+                        <tr>
+                            <th class="D" style="border-left: 3px solid rgb(255, 221, 42); border-top:3px solid rgb(255, 221, 42); border-right: 3px solid rgb(7, 8, 235); border-bottom:3px solid rgb(7, 8, 235);">1</th>
+                            <th class="D" style="border-right: 3px solid rgb(255, 221, 42);border-top:3px solid rgb(255, 221, 42); border-left: 3px solid rgb(7, 8, 235); border-bottom:3px solid rgb(7, 8, 235);"><img src="Pera.png" height="100px" width="100px" ></th>
+                        </tr>
+                        <tr>
+                            <th class="D" style="border-left:3px solid rgb(255, 221, 42); border-bottom:3px solid rgb(255, 221, 42); border-right: 3px solid rgb(7, 8, 235); border-top:3px solid rgb(7, 8, 235);"><img src="Platan.png" height="100px" width="100px" ></th>
+                            <th class="D" style="border-right:3px solid rgb(255, 221, 42); border-bottom:3px solid rgb(255, 221, 42);border-left: 3px solid rgb(7, 8, 235); border-top:3px solid rgb(7, 8, 235);"><img src="Presec.png" height="100px" width="100px"></th>
+                        </tr>
+                    </table>
+                </th>
+            </tr>
+    </table>      
+    
+    
+    
+
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <style>
+        table, th, td{
+            border-collapse: collapse;
+        }
+        
+        .V {
+            color: rgb(212, 229, 247);
+            background-color: rgb(212, 229, 247);
+            border: 2px solid rgb(72, 114, 156);
+            width: 100px;
+            height: 100px;
+            font-size: 100px
+        }
+        .Vdos{
+            color: rgb(255, 255, 255);
+            background-color: rgb(255, 255, 255);
+            border: 2px solid rgb(72, 114, 156);
+            width: 100px;
+            height: 100px;
+            font-size: 100px
+        }
+        .cinc {
+            color: rgb(72, 114, 156);
+            background-color: rgb(247, 188, 72);
+            border: 2px solid rgb(72, 114, 156);
+            width: 100px;
+            height: 100px;
+            font-size: 100px
+        }
+        .cincdos {
+            color: rgb(72, 114, 156);
+            background-color: rgb(203, 229, 255);
+            border: 2px solid rgb(72, 114, 156);
+            width: 100px;
+            height: 100px;
+            font-size: 100px
+        }
+        .blaudos {
+            color: rgb(72, 114, 156);
+            background-color: rgb(241, 248, 255);
+            border: 2px solid rgb(72, 114, 156);
+            width: 100px;
+            height: 100px;
+            font-size: 100px
+        }
+        .num {
+            color: rgb(72, 114, 156);
+            background-color: rgb(255, 255, 255);
+            border: 2px solid rgb(72, 114, 156);
+            width: 100px;
+            height: 100px;
+            font-size: 100px
+        }
+        
+
+        
+        
+
+    </style>
+</head>
+<body>
+    <h1>Sudoku</h1>
+    <table>
+        
+        <tr>
+            <th class="cinc" style="border-left:4px solid rgb(135, 162, 187) ;border-top:4px solid rgb(135, 162, 187) ;border-right:2px solid rgb(72, 114, 156);border-bottom:2px solid rgb(72, 114, 156);">5</th>
+            <th class="V" style="border-left:2px solid rgb(72, 114, 156) ;border-top:4px solid rgb(135, 162, 187) ;border-right:2px solid rgb(72, 114, 156);border-bottom:2px solid rgb(72, 114, 156);">V</th>
+            <th class="V" style="border-left:2px solid rgb(72, 114, 156);border-top:4px solid rgb(135, 162, 187);border-right:4px solid rgb(135, 162, 187);border-bottom:2px solid rgb(72, 114, 156);">V</th>
+            <th class="V" style="border-left:4px solid rgb(135, 162, 187) ;border-top:4px solid rgb(135, 162, 187) ;border-right:2px solid rgb(72, 114, 156);border-bottom:2px solid rgb(72, 114, 156);">V</th>
+            <th class="blaudos" style="border-left:2px solid rgb(72, 114, 156) ;border-top:4px solid rgb(135, 162, 187) ;border-right:2px solid rgb(72, 114, 156);border-bottom:2px solid rgb(72, 114, 156);">4</th>
+            <th class="V" style="border-left:2px solid rgb(72, 114, 156);border-top:4px solid rgb(135, 162, 187);border-right:4px solid rgb(135, 162, 187);border-bottom:2px solid rgb(72, 114, 156);">V</th>
+        </tr>
+        <tr>
+            <th class="V" style="border-left:4px solid rgb(135, 162, 187);border-top:2px solid rgb(72, 114, 156);border-right:2px solid rgb(72, 114, 156);border-bottom:4px solid rgb(135, 162, 187);">V</th>
+            <th class="V" style="border-left:2px solid rgb(72, 114, 156);border-top:2px solid rgb(72, 114, 156);border-right:2px solid rgb(72, 114, 156);border-bottom:4px solid rgb(135, 162, 187);">V</th>
+            <th class="blaudos" style="border-left:2px solid rgb(72, 114, 156);border-top:2px solid rgb(72, 114, 156);border-right:4px solid rgb(135, 162, 187);border-bottom:4px solid rgb(135, 162, 187);">3</th>
+            <th class="cincdos" style="border-left:4px solid rgb(135, 162, 187);border-top:2px solid rgb(72, 114, 156);border-right:2px solid rgb(72, 114, 156);border-bottom:4px solid rgb(135, 162, 187);">5</th>
+            <th class="Vdos" style="border-left:2px solid rgb(72, 114, 156);border-top:2px solid rgb(72, 114, 156);border-right:2px solid rgb(72, 114, 156);border-bottom:4px solid rgb(135, 162, 187);">V</th>
+            <th class="Vdos" style="border-left:2px solid rgb(72, 114, 156);border-top:2px solid rgb(72, 114, 156);border-right:4px solid rgb(135, 162, 187);border-bottom:4px solid rgb(135, 162, 187);">V</th>
+        </tr>
+        <tr>
+            <th class="V" style="border-left:4px solid rgb(135, 162, 187) ;border-top:4px solid rgb(135, 162, 187) ;border-right:2px solid rgb(72, 114, 156);border-bottom:2px solid rgb(72, 114, 156);">V</th>
+            <th class="Vdos" style="border-left:2px solid rgb(72, 114, 156) ;border-top:4px solid rgb(135, 162, 187) ;border-right:2px solid rgb(72, 114, 156);border-bottom:2px solid rgb(72, 114, 156);">V</th>
+            <th class="num" style="border-left:2px solid rgb(72, 114, 156);border-top:4px solid rgb(135, 162, 187);border-right:4px solid rgb(135, 162, 187);border-bottom:2px solid rgb(72, 114, 156);">4</th>
+            <th class="Vdos" style="border-left:4px solid rgb(135, 162, 187) ;border-top:4px solid rgb(135, 162, 187) ;border-right:2px solid rgb(72, 114, 156);border-bottom:2px solid rgb(72, 114, 156);">V</th>
+            <th class="Vdos" style="border-left:2px solid rgb(72, 114, 156) ;border-top:4px solid rgb(135, 162, 187) ;border-right:2px solid rgb(72, 114, 156);border-bottom:2px solid rgb(72, 114, 156);">V</th>
+            <th class="cincdos" style="border-left:2px solid rgb(72, 114, 156);border-top:4px solid rgb(135, 162, 187);border-right:4px solid rgb(135, 162, 187);border-bottom:2px solid rgb(72, 114, 156);">5</th>
+        </tr>
+        <tr>
+            <th class="blaudos" style="border-left:4px solid rgb(135, 162, 187);border-top:2px solid rgb(72, 114, 156);border-right:2px solid rgb(72, 114, 156);border-bottom:4px solid rgb(135, 162, 187);">6</th>
+            <th class="Vdos" style="border-left:2px solid rgb(72, 114, 156);border-top:2px solid rgb(72, 114, 156);border-right:2px solid rgb(72, 114, 156);border-bottom:4px solid rgb(135, 162, 187);">V</th>
+            <th class="Vdos" style="border-left:2px solid rgb(72, 114, 156);border-top:2px solid rgb(72, 114, 156);border-right:4px solid rgb(135, 162, 187);border-bottom:4px solid rgb(135, 162, 187);">V</th>
+            <th class="num" style="border-left:4px solid rgb(135, 162, 187);border-top:2px solid rgb(72, 114, 156);border-right:2px solid rgb(72, 114, 156);border-bottom:4px solid rgb(135, 162, 187);">4</th>
+            <th class="Vdos" style="border-left:2px solid rgb(72, 114, 156);border-top:2px solid rgb(72, 114, 156);border-right:2px solid rgb(72, 114, 156);border-bottom:4px solid rgb(135, 162, 187);">V</th>
+            <th class="Vdos" style="border-left:2px solid rgb(72, 114, 156);border-top:2px solid rgb(72, 114, 156);border-right:4px solid rgb(135, 162, 187);border-bottom:4px solid rgb(135, 162, 187);">V</th>
+        </tr>
+        <tr>
+            <th class="V" style="border-left:4px solid rgb(135, 162, 187) ;border-top:4px solid rgb(135, 162, 187) ;border-right:2px solid rgb(72, 114, 156);border-bottom:2px solid rgb(72, 114, 156);">V</th>
+            <th class="Vdos" style="border-left:2px solid rgb(72, 114, 156) ;border-top:4px solid rgb(135, 162, 187) ;border-right:2px solid rgb(72, 114, 156);border-bottom:2px solid rgb(72, 114, 156);">V</th>
+            <th class="cincdos" style="border-left:2px solid rgb(72, 114, 156);border-top:4px solid rgb(135, 162, 187);border-right:4px solid rgb(135, 162, 187);border-bottom:2px solid rgb(72, 114, 156);">5</th>
+            <th class="num" style="border-left:4px solid rgb(135, 162, 187) ;border-top:4px solid rgb(135, 162, 187) ;border-right:2px solid rgb(72, 114, 156);border-bottom:2px solid rgb(72, 114, 156);">3</th>
+            <th class="Vdos" style="border-left:2px solid rgb(72, 114, 156) ;border-top:4px solid rgb(135, 162, 187) ;border-right:2px solid rgb(72, 114, 156);border-bottom:2px solid rgb(72, 114, 156);">V</th>
+            <th class="Vdos" style="border-left:2px solid rgb(72, 114, 156);border-top:4px solid rgb(135, 162, 187);border-right:4px solid rgb(135, 162, 187);border-bottom:2px solid rgb(72, 114, 156);">V</th>
+        </tr>
+        <tr>
+            <th class="V" style="border-left:4px solid rgb(135, 162, 187);border-top:2px solid rgb(72, 114, 156);border-right:2px solid rgb(72, 114, 156);border-bottom:4px solid rgb(135, 162, 187);">V</th>
+            <th class="num" style="border-left:2px solid rgb(72, 114, 156);border-top:2px solid rgb(72, 114, 156);border-right:2px solid rgb(72, 114, 156);border-bottom:4px solid rgb(135, 162, 187);">1</th>
+            <th class="Vdos" style="border-left:2px solid rgb(72, 114, 156);border-top:2px solid rgb(72, 114, 156);border-right:4px solid rgb(135, 162, 187);border-bottom:4px solid rgb(135, 162, 187);">V</th>
+            <th class="Vdos" style="border-left:4px solid rgb(135, 162, 187);border-top:2px solid rgb(72, 114, 156);border-right:2px solid rgb(72, 114, 156);border-bottom:4px solid rgb(135, 162, 187);">V</th>
+            <th class="Vdos" style="border-left:2px solid rgb(72, 114, 156);border-top:2px solid rgb(72, 114, 156);border-right:2px solid rgb(72, 114, 156);border-bottom:4px solid rgb(135, 162, 187);">V</th>
+            <th class="Vdos" style="border-left:2px solid rgb(72, 114, 156);border-top:2px solid rgb(72, 114, 156);border-right:4px solid rgb(135, 162, 187);border-bottom:4px solid rgb(135, 162, 187);">V</th>
+        </tr>
+    </table>
+
+    
+</body>
+</html>
